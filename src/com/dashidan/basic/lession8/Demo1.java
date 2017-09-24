@@ -2,30 +2,20 @@ package com.dashidan.basic.lession8;
 
 /**
  * 大屎蛋教程网-dashidan.com
- *
- * Java教程基础篇: 8.Java复合运算符： +=, -=等.
+ * <p>
+ * Java教程基础篇:8. Java流程控制
+ * 分支语句 if else
  */
 public class Demo1 {
     public static void main(String[] args) {
         int a = 0;
-        /** += 运算*/
-        a += 1;
-        System.out.println(a);
-        /** -= 运算*/
-        int b = 0;
-        b -= 1;
-        System.out.println(b);
-        /** *= 运算*/
-        int c = 2;
-        c *= 3;
-        System.out.println(c);
-        /** /= 运算*/
-        int d = 5;
-        d /= 3;
-        System.out.println(d);
-        /** %= 运算*/
-        int e = 5;
-        e %= 3;
-        System.out.println(e);
+        int b = 1;
+        if (a > b) {
+            System.out.println("a > b");
+        } else if (a == b) {
+            System.out.println("a == b");
+        } else {
+            System.out.println("a < b");
+        }
     }
 }

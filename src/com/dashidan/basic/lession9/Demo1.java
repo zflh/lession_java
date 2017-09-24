@@ -2,36 +2,17 @@ package com.dashidan.basic.lession9;
 
 /**
  * 大屎蛋教程网-dashidan.com
- *
- * Java教程基础篇: 9.Java自增,自减运算符： ++, --
+ * <p>
+ * Java教程基础篇: 9. Java对象与命名空间
+ * java对象
  */
 public class Demo1 {
     public static void main(String[] args) {
-        /** 前缀,后缀单独执行结果一样*/
-        int i = 0;
-        i++;
-        System.out.println(i);
-        int j = 0;
-        ++j;
-        System.out.println(j);
-        /** 前缀,后缀放在运算过程中结果不同*/
-        /** 前缀式*/
-        int a = 0;
-        i = 0;
-        a = ++i;
-        /** i使用前是0,此时i为0不加1,a为0. */
-        System.out.println(a);
-        /** 使用后i加1,i为1*/
-        System.out.println(i);
-
-        /** 后缀式*/
-        /** 初始化a和i*/
-        a = 0;
-        i = 0;
-        a = i++;
-        /** i使用前是0,此时i为0不加1,a为0. */
-        System.out.println(a);
-        /** 使用后i加1,i为1*/
-        System.out.println(i);
+        Dog dog0 = new Dog();
+        dog0.setName("泰日天");
+        Dog dog1 = new Dog();
+        dog1.setName("哈拆迁");
+        System.out.println(dog0.getName());
+        System.out.println(dog1.getName());
     }
 }

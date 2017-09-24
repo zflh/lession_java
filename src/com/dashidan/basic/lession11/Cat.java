@@ -1,10 +1,10 @@
-package com.dashidan.basic.lession23;
+package com.dashidan.basic.lession11;
 
 /**
  * 大屎蛋教程网-dashidan.com
- *
- * Java教程基础篇: 21.Java静态变量：static
- * Cat类
+ * <p>
+ * Java教程基础篇: 11. Java静态变量与常量
+ * Cat 类
  */
 public class Cat {
     public static int MOUSE_NUM = 1;

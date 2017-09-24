@@ -2,7 +2,7 @@ package com.dashidan.promote.lession10;
 
 /**
  * 大屎蛋教程网-dashidan.com
- *
+ * <p>
  * Java教程进阶篇: 10.Java对象(9)：接口implements，Interface
  */
 public class Demo1 {

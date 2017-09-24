@@ -1,11 +1,12 @@
-package com.dashidan.basic.lession15;
+package com.dashidan.basic.lession5;
 
 /**
  * 大屎蛋教程网-dashidan.com
- *
- * Java教程基础篇: 15.Java变量作用域：成员变量, 局部变量
+ * <p>
+ * Java教程基础篇: 5. Java变量
+ * 变量作用域
  */
-public class Demo1 {
+public class Demo3 {
     /**
      * a,b 是成员变量,整个方法都可以调用.
      */
@@ -22,7 +23,6 @@ public class Demo1 {
         //System.out.println(m);
         //System.out.println(n);
     }
-
 
     public static void testVar() {
         /**m,n 是成员变量,必须初始化赋值.作用域是在这个方法中. */

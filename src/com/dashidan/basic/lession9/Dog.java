@@ -1,9 +1,9 @@
-package com.dashidan.basic.lession20;
+package com.dashidan.basic.lession9;
 
 /**
  * 大屎蛋教程网-dashidan.com
- *
- * Java教程基础篇: 20.Java对象：Object, class, new
+ * <p>
+ * Java教程基础篇: 9. Java对象与命名空间
  * Dog 类
  */
 public class Dog {

@@ -1,11 +1,12 @@
-package com.dashidan.basic.lession12;
+package com.dashidan.basic.lession6;
 
 /**
  * 大屎蛋教程网-dashidan.com
- *
- * Java教程基础篇: 12.Java三目运算符： ？：
+ * <p>
+ * Java教程基础篇: 6. Java运算符
+ * Java三目运算符
  */
-public class Demo1 {
+public class Demo6 {
     public static void main(String[] args) {
         int a = 1;
         int b = 2;

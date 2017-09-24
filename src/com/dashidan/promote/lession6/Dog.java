@@ -2,7 +2,7 @@ package com.dashidan.promote.lession6;
 
 /**
  * 大屎蛋教程网-dashidan.com
- *
+ * <p>
  * Java教程进阶篇: 6.Java对象(5)：继承：extends
  * Dog 继承自 Pet类
  */

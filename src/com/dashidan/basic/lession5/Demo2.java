@@ -1,11 +1,12 @@
-package com.dashidan.basic.lession24;
+package com.dashidan.basic.lession5;
 
 /**
  * 大屎蛋教程网-dashidan.com
- *
- * Java教程基础篇: ：24.Java变量(2)：字符串变量,String
+ * <p>
+ * Java教程基础篇: 5. Java变量
+ * 字符串变量
  */
-public class Demo1 {
+public class Demo2 {
     public static void main(String[] args) {
         String s0 = "大屎蛋教程网";
         String s1 = "大屎蛋教程网";

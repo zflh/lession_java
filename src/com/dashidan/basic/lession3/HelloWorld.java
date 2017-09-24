@@ -2,8 +2,8 @@ package com.dashidan.basic.lession3;
 
 /**
  * 大屎蛋教程网-dashidan.com
- *
- * Java教程基础篇: 1.HelloWorld.
+ * <p>
+ * Java教程基础篇: 3. 第一个Java程序
  */
 public class HelloWorld {
     public static void main(String[] args) {

@@ -1,11 +1,12 @@
-package com.dashidan.basic.lession13;
+package com.dashidan.basic.lession6;
 
 /**
  * 大屎蛋教程网-dashidan.com
- *
- * Java教程基础篇: 13.Java运算符优先级
+ * <p>
+ * Java教程基础篇: 6. Java运算符
+ * Java运算符优先级
  */
-public class Demo1 {
+public class Demo7 {
     public static void main(String[] args) {
         int a = 1;
         int b = 2;

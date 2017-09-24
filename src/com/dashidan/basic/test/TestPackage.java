@@ -2,8 +2,9 @@ package com.dashidan.basic.test;
 
 /**
  * 大屎蛋教程网-dashidan.com
- *
- * Java教程基础篇: 22.Java命名空间：包package, import
+ * <p>
+ * Java教程基础篇: 9. Java对象与命名空间
+ * Java命名空间
  */
 public class TestPackage {
     public void printInfo() {

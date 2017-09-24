@@ -1,11 +1,12 @@
-package com.dashidan.basic.lession18;
+package com.dashidan.basic.lession8;
 
 /**
  * 大屎蛋教程网-dashidan.com
- *
- * Java教程基础篇: 18.Java流程控制(3)：循环for, while, continue, break
+ * <p>
+ * Java教程基础篇:8. Java流程控制
+ * Java循环语句
  */
-public class Demo1 {
+public class Demo5 {
     public static void main(String[] args) {
         /** for循环基本表达方式*/
         System.out.println("for循环基本表达方式");

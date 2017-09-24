@@ -1,12 +1,12 @@
-package com.dashidan.basic.lession17;
+package com.dashidan.basic.lession8;
 
 /**
  * 大屎蛋教程网-dashidan.com
- *
- * Java教程基础篇: 17.Java流程控制(2)：switch,case,break,default
- * Demo2: 测试switch case参数为字符串
+ * <p>
+ * Java教程基础篇:8. Java流程控制
+ * switch case参数为字符串
  */
-public class Demo3 {
+public class Demo4 {
 
     public static void main(String[] args) {
         String str = "a";

@@ -1,11 +1,12 @@
-package com.dashidan.basic.lession19;
+package com.dashidan.basic.lession8;
 
 /**
  * 大屎蛋教程网-dashidan.com
- *
- * Java教程基础篇: 19.Java流程控制(4)：返回return
+ * <p>
+ * Java教程基础篇:8. Java流程控制
+ * return 语句
  */
-public class Demo1 {
+public class Demo6 {
     public static void main(String[] args) {
         /** 执行无返回值的方法*/
         testReturn(1);
