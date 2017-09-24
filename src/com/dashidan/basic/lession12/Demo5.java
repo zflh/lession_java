@@ -1,18 +1,19 @@
-package com.dashidan.promote.lession6;
+package com.dashidan.basic.lession12;
 
 /**
  * 大屎蛋教程网-dashidan.com
  * <p>
- * Java教程进阶篇: 6.Java对象(5)：继承：extends
+ * Java教程基础篇: 12.Java对象
+ * 对象的继承
  */
-public class Demo1 {
+public class Demo5 {
 
     public static void main(String[] args) {
         Cat cat = new Cat();
         Dog dog = new Dog();
         /** 调用父类的方法*/
-        cat.eat();
-        dog.eat();
+        cat.walk();
+        dog.walk();
         /** 调用子类的方法*/
         cat.eatFish();
         dog.eatBone();

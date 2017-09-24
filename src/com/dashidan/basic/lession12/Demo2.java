@@ -1,12 +1,12 @@
-package com.dashidan.promote.lession4;
+package com.dashidan.basic.lession12;
 
 /**
  * 大屎蛋教程网-dashidan.com
  * <p>
- * Java教程进阶篇: 4.Java对象(3)：参数的值传递与引用传递：基本类型,String,Object
+ * Java教程基础篇: 12.Java对象
  * 值传递
  */
-public class Demo1 {
+public class Demo2 {
 
     public static void main(String[] args) {
         int a = 1;

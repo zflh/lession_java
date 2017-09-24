@@ -1,11 +1,12 @@
-package com.dashidan.promote.lession12;
+package com.dashidan.basic.lession12;
 
 /**
  * 大屎蛋教程网-dashidan.com
  * <p>
- * Java教程进阶篇: 12.Java对象(11)：对象向上转型和向下转型
+ * Java教程基础篇: 12.Java对象
+ * 对象向上转型和向下转型
  */
-public class Demo1 {
+public class Demo13 {
     public static void main(String[] args) {
         Cat cat = new Cat();
         /**

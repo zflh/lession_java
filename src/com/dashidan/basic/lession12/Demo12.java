@@ -1,11 +1,12 @@
-package com.dashidan.promote.lession11;
+package com.dashidan.basic.lession12;
 
 /**
  * 大屎蛋教程网-dashidan.com
  * <p>
- * Java教程进阶篇: 11.Java对象(10)：对象实例类型判断：instanceof
+ * Java教程基础篇: 12.Java对象
+ * 对象实例类型判断
  */
-public class Demo1 {
+public class Demo12 {
     public static void main(String[] args) {
         Pet pet = new Pet();
         boolean isInstance = pet instanceof Pet;

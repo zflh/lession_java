@@ -74,7 +74,7 @@ Intellij IDEA可以说是目前最好的java开发工具了.
 下方的控制会输出运行结果.   
 
 如图:
-![图f1-1](http://localhost/img/java/addenda/f1-1.png)
+![图f1-1](http://dashidan.com/img/java/addenda/f1-1.png)
 
 8 查看代码运行输出
 ---
@@ -82,4 +82,4 @@ Intellij IDEA可以说是目前最好的java开发工具了.
 在IDE(代码编辑器)的下方是控制台区, 会显示程序输出
 
 如图:
-![图f1-2](http://localhost/img/java/addenda/f1-2.png)
+![图f1-2](http://dashidan.com/img/java/addenda/f1-2.png)

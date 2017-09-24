@@ -1,10 +1,11 @@
-package com.dashidan.promote.lession8;
+package com.dashidan.basic.lession12;
 
 /**
  * 大屎蛋教程网-dashidan.com
  * <p>
- * Java教程进阶篇: 8.Java对象(7)：引用当前对象与父对象：this, super
- * Pet类
+ * Java教程基础篇: 12.Java对象
+ * 对象的继承
+ * Pet类 作为 父类
  */
 public class Pet {
     /**
@@ -22,7 +23,11 @@ public class Pet {
         this.name = name;
     }
 
+    public void walk() {
+        System.out.println("Pet walk");
+    }
+
     public void eat() {
-        System.out.println("Pet eat.");
+        System.out.println("Pet eat");
     }
 }

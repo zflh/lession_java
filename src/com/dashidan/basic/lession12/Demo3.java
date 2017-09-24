@@ -1,12 +1,12 @@
-package com.dashidan.promote.lession4;
+package com.dashidan.basic.lession12;
 
 /**
  * 大屎蛋教程网-dashidan.com
  * <p>
- * Java教程进阶篇: 4.Java对象(3)：参数的值传递与引用传递：基本类型,String,Object
+ * Java教程基础篇: 12.Java对象
  * 引用传递
  */
-public class Demo2 {
+public class Demo3 {
     public static void main(String[] args) {
         TestObject testObject1 = new TestObject();
         testObject1.setName("大屎蛋教程网");
@@ -18,5 +18,20 @@ public class Demo2 {
         testObject2.setName("dashidan.com");
         System.out.println("修改后 testObject1 name " + testObject1.getName());
         System.out.println("修改后 testObject2 name " + testObject2.getName());
+    }
+}
+
+/**
+ * 引用传递测试对象
+ */
+class TestObject {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
