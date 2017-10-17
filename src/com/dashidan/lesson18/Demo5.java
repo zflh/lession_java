@@ -13,7 +13,7 @@ public class Demo5 {
         SyncThread syncThread = new SyncThread("t1", lock);
         syncThread.start();
 
-        SyncThread syncThread1 = new SyncThread("t2",lock);
+        SyncThread syncThread1 = new SyncThread("t2", lock);
         syncThread1.start();
     }
 }
