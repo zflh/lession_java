@@ -3,16 +3,19 @@ package com.dashidan.lesson9;
 /**
  * 大屎蛋教程网-dashidan.com
  * <p>
- * Java教程基础篇: 9. Java对象与命名空间
- * java对象
+ * Java教程基础篇:9. Java流程控制
+ * 分支语句 if else
  */
 public class Demo1 {
     public static void main(String[] args) {
-        Dog dog0 = new Dog();
-        dog0.setName("泰日天");
-        Dog dog1 = new Dog();
-        dog1.setName("哈拆迁");
-        System.out.println(dog0.getName());
-        System.out.println(dog1.getName());
+        int a = 0;
+        int b = 1;
+        if (a > b) {
+            System.out.println("a > b");
+        } else if (a == b) {
+            System.out.println("a == b");
+        } else {
+            System.out.println("a < b");
+        }
     }
 }

@@ -1,81 +1,53 @@
 package com.dashidan.lesson19;
 
-
-import java.util.ArrayList;
-
-/**
- * 观察者接口
- */
-interface IObserver {
-    void action();
-}
-
 /**
  * 大屎蛋教程网-dashidan.com
  * <p>
- * Java教程基础篇:  19.Java设计模式
- * 观察者模式
+ * Java教程基础篇:  19.Java线程
+ * 线程阻塞状态  获得同步锁, wait(), notifyAll()
  */
 public class Demo3 {
+
+    public static Object object = new Object();
+
     public static void main(String[] args) {
-        /** 初始化发布者和观察者*/
-        Publisher publisher = new Publisher();
-        Observer1 observer1 = new Observer1();
-        Observer2 observer2 = new Observer2();
-        /** 加入2个观察者到发布者的消息侦听队列*/
-        publisher.addObserver(observer1);
-        publisher.addObserver(observer2);
-        /** 通知观察者*/
-        publisher.notifyAllObserver();
-    }
-}
+        WaitThread waitThread = new WaitThread(object);
+        waitThread.start();
 
-/**
- * 发布者
- */
-class Publisher {
+        try {
+            /** 主线程休眠3秒*/
+            System.out.println("主线程休眠3秒");
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
-    /**
-     * 发布者的消息侦听队列
-     */
-    ArrayList<IObserver> observers = new ArrayList<>();
-
-    /**
-     * 加入消息侦听队列
-     */
-    public void addObserver(IObserver iObserver) {
-        System.out.println("加入观察者");
-        observers.add(iObserver);
-    }
-
-    /**
-     * 通知侦听队列中所有的观察者
-     */
-    public void notifyAllObserver() {
-        for (IObserver iObserver : observers) {
-            System.out.println("通知观察者");
-            iObserver.action();
+        /** 3秒后执行 notifyAll */
+        synchronized (object) {
+            object.notifyAll();
         }
     }
 }
 
-/**
- * 观察者Observer1类
- */
-class Observer1 implements IObserver {
-    @Override
-    public void action() {
-        System.out.println("Observer1 action.");
-    }
-}
+class WaitThread extends Thread {
+    Object object;
 
-/**
- * 观察者Observer2类
- */
-class Observer2 implements IObserver {
+    public WaitThread(Object object) {
+        this.object = object;
+    }
+
     @Override
-    public void action() {
-        System.out.println("Observer2 action.");
+    public void run() {
+        System.out.println("WaitThread run.");
+        synchronized (object) {
+            try {
+                System.out.println("WaitThread before lock " + this.getName());
+                object.wait();
+                System.out.println("WaitThread after lock " + this.getName());
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
 

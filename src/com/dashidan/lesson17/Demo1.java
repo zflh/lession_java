@@ -3,22 +3,19 @@ package com.dashidan.lesson17;
 /**
  * 大屎蛋教程网-dashidan.com
  * <p>
- * Java教程基础篇: 17.Java转义字符
+ * Java教程基础篇: 17. Java位运算
  */
 public class Demo1 {
     public static void main(String[] args) {
-        char a = '\\';
-        char b = '\"';
-        /** 这个会报错，Java中无法转义\? */
-        char d = '\'';
-        /** 8进制整数*/
-        char e = '\100';
-        /** unicode变化转义*/
-        char g = '\u1111';
-        System.out.println("a: " + a);
-        System.out.println("b: " + b);
-        System.out.println("d: " + d);
-        System.out.println("e: " + e);
-        System.out.println("g: " + g);
+        /** 10进制*/
+        int a = 100;
+        /** 8进制*/
+        int b = 0100;
+        /** 16进制*/
+        int c = 0x100;
+        System.out.println("a: " + a + " b: " + b + " c: " + c);
+        int d = -0100;
+        int e = -0x100;
+        System.out.println("d: " + d + " e: " + e);
     }
 }

@@ -3,32 +3,22 @@ package com.dashidan.lesson18;
 /**
  * 大屎蛋教程网-dashidan.com
  * <p>
- * Java教程基础篇:  18.Java线程
+ * Java教程基础篇: 18.Java转义字符
  */
 public class Demo1 {
     public static void main(String[] args) {
-        MyThread1 t1 = new MyThread1();
-        /** t1 线程启动*/
-        t1.start();
-        MyThread2 myThread2 = new MyThread2();
-        Thread t2 = new Thread(myThread2);
-        /** t2 线程启动*/
-        t2.start();
+        char a = '\\';
+        char b = '\"';
+        /** 这个会报错，Java中无法转义\? */
+        char d = '\'';
+        /** 8进制整数*/
+        char e = '\100';
+        /** unicode变化转义*/
+        char g = '\u1111';
+        System.out.println("a: " + a);
+        System.out.println("b: " + b);
+        System.out.println("d: " + d);
+        System.out.println("e: " + e);
+        System.out.println("g: " + g);
     }
 }
-
-class MyThread1 extends Thread {
-
-    @Override
-    public void run() {
-        System.out.println("MyThread1 run.");
-    }
-}
-
-class MyThread2 implements Runnable {
-    @Override
-    public void run() {
-        System.out.println("MyThread2 run.");
-    }
-}
-

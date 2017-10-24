@@ -3,19 +3,34 @@ package com.dashidan.lesson16;
 /**
  * 大屎蛋教程网-dashidan.com
  * <p>
- * Java教程基础篇: 16. Java位运算
+ * Java教程基础篇: 16.Java异常
  */
 public class Demo1 {
     public static void main(String[] args) {
-        /** 10进制*/
-        int a = 100;
-        /** 8进制*/
-        int b = 0100;
-        /** 16进制*/
-        int c = 0x100;
-        System.out.println("a: " + a + " b: " + b + " c: " + c);
-        int d = -0100;
-        int e = -0x100;
-        System.out.println("d: " + d + " e: " + e);
+        try {
+            /** 方法体*/
+            testThrow();
+            testThrows();
+        } catch (NullPointerException e) {
+            /** 异常处理*/
+            System.out.println("run catch NullPointerException.");
+            e.printStackTrace();
+        } catch (Exception e) {
+            /** 异常处理*/
+            System.out.println("run catch Exception.");
+            e.printStackTrace();
+        } finally {
+            /** finally语句*/
+            System.out.println("run finally.");
+        }
+    }
+
+    public static void testThrow() {
+        /** 方法体*/
+        throw new NullPointerException();
+    }
+
+    public static void testThrows() throws NullPointerException, ArithmeticException {
+        /** 方法体*/
     }
 }

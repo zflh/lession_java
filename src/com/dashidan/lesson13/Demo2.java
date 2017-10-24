@@ -3,25 +3,27 @@ package com.dashidan.lesson13;
 /**
  * 大屎蛋教程网-dashidan.com
  * <p>
- * Java教程基础篇: 13. Java包装类
- * 整数转化为字符串
+ * Java教程基础篇: 13.Java对象
+ * 值传递
  */
 public class Demo2 {
-    public static void main(String[] args) {
-        int count = 100000;
-        long t1 = System.currentTimeMillis();
-        System.out.println("");
-        for (int i = 0; i < count; i++) {
-            Integer in = new Integer(100);
-            String s1 = in.toString();
-        }
-        long t2 = System.currentTimeMillis();
-        System.out.println("t2 - t1 " + (t2 - t1));
-        for (int i = 0; i < count; i++) {
-            String s2 = 100 + "";
-        }
-        long t3 = System.currentTimeMillis();
 
-        System.out.println("t3 - t2 " + (t3 - t2));
+    public static void main(String[] args) {
+        int a = 1;
+        String name = "大屎蛋";
+        changeValue(a, name);
+        /** 原值不变*/
+        System.out.println("原值 a : " + a);
+        /** 原字符串不变*/
+        System.out.println("原值 name : " + name);
+    }
+
+    public static void changeValue(int num, String str) {
+        num++;
+        /** 输出改变的值, 改变了参数的值, 原值不变*/
+        System.out.println("changeValue num : " + num);
+        /** 添加字符串, 改变了作为参数传进来的字符串的值, 原字符串不变*/
+        str += "dashidan.com";
+        System.out.println("changeValue str : " + str);
     }
 }
