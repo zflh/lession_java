@@ -20,7 +20,7 @@ public class Demo3 {
         int a = 0;
         i = 0;
         a = ++i;
-        /** i使用前是0,此时i为0不加1,a为0. */
+        /** i使用前加1,此时i为1,a为1. */
         System.out.println(a);
         /** 使用后i加1,i为1*/
         System.out.println(i);
