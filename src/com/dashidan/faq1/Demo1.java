@@ -1,4 +1,4 @@
-package com.dashidan.faq;
+package com.dashidan.faq1;
 
 import java.util.HashMap;
 import java.util.Map;
